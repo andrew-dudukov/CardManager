@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">CardManager</string>
+
+    <string name="lock_card">Lock card</string>
+    <string name="setting">Setting</string>
+    <string name="transactions">Transactions</string>
+    <string name="transactions_details">Transactions Details</string>
+    <string name="card_transaction">Card transaction</string>
+    <string name="view_all">View all</string>
+    <string name="pending">Pending</string>
+    <string name="executed">Executed</string>
+    <string name="available_amount">Available amount</string>
+    <string name="merchand_title">Merchand:</string>
+    <string name="amount_title">Amount:</string>
+    <string name="currency_title">Currency:</string>
+    <string name="date_title">Date:</string>
+    <string name="not_implemented_yet">Not implemented yet!</string>
+</resources>
