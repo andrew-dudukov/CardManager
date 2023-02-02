@@ -1,10 +1,10 @@
 package andrew.dudukov.cardmanager
 
-import andrew.dudukov.cardmanager.ui.navhost.SwissquoteNavHost
+import andrew.dudukov.cardmanager.ui.navhost.CardManagerNavHost
 import andrew.dudukov.cardmanager.ui.navhost.destination.Overview
 import andrew.dudukov.cardmanager.ui.navhost.destination.TransactionDetails
 import andrew.dudukov.cardmanager.ui.navhost.destination.Transactions
-import andrew.dudukov.cardmanager.ui.navhost.destination.swissquoteScreens
+import andrew.dudukov.cardmanager.ui.navhost.destination.cardManagerScreens
 import andrew.dudukov.cardmanager.ui.theme.SwissquoteTheme
 import android.os.Bundle
 import androidx.activity.ComponentActivity
@@ -47,7 +47,7 @@ fun SwissquoteApp() {
         val navController = rememberNavController()
         val currentBackStack by navController.currentBackStackEntryAsState()
         val currentDestination = currentBackStack?.destination
-        val currentScreen = swissquoteScreens.find { it.route == currentDestination?.route } ?: Overview
+        val currentScreen = cardManagerScreens.find { it.route == currentDestination?.route } ?: Overview
         val titleRes = when (currentScreen) {
             Transactions -> R.string.transactions
             TransactionDetails -> R.string.transactions_details
@@ -63,7 +63,7 @@ fun SwissquoteApp() {
                 }
             }
         ) { innerPadding ->
-            SwissquoteNavHost(
+            CardManagerNavHost(
                 navController = navController,
                 modifier = Modifier.padding(innerPadding)
             )

@@ -17,7 +17,7 @@ import androidx.navigation.compose.composable
 import com.google.gson.Gson
 
 @Composable
-fun SwissquoteNavHost(
+fun CardManagerNavHost(
     navController: NavHostController,
     modifier: Modifier = Modifier
 ) {

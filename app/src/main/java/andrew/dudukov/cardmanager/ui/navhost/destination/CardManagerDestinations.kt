@@ -25,4 +25,4 @@ object TransactionDetails : CardManagerDestination {
     val arguments = listOf(navArgument(transactionArg) { type = TransactionType() })
 }
 
-val swissquoteScreens = listOf(Overview, Transactions, TransactionDetails)
+val cardManagerScreens = listOf(Overview, Transactions, TransactionDetails)
